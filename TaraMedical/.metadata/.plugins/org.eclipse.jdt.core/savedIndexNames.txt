@@ -1,0 +1,5 @@
+INDEX VERSION 1.126+C:\Users\Annie\Documents\GitHub\TaraMedical\TaraMedical\.metadata\.plugins\org.eclipse.jdt.core
+2279069859.index
+260127705.index
+1408809668.index
+4257450693.index
