@@ -1,0 +1,11 @@
+1. Dowload and install GitHub
+
+2. Login
+
+3. Open Git Shell
+
+4. Copy paste the following line :
+
+   git clone https://github.com/lmacwan/TaraMedical.git
+
+5. Restart GitHub.
