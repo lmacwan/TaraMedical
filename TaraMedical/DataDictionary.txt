@@ -1,0 +1,58 @@
+ => info
+    - orginfo		(Organization Information)
+    - appinfo		(Application Information)
+    - tandc		(terms and conditions)
+
+ => subject
+    - sid (PK)
+    - sname		(subject Name)
+    - sdesc <NULL>	(subject description)
+    - tcnt		(tests count)
+    - dt		(added on which date)
+
+ => test
+    - tid (PK)
+    - sid (FK : subject)	
+    - for		(for which topic)
+    - dur		(test duration)
+    - isfree		(Paid / Free)
+    - qcnt		(questions count)
+    - dt		(added on which date)
+
+ => question
+    - qid (PK)
+    - tid (FK : test)
+    - qtext		(question text)
+    - optcnt		(no. of options)
+    - options  		(options separated by '\u0000')
+    - ansidx   		(zero-based index of the correct answer)
+
+ => user
+    - uname (PK)	(user name, can be email-id)
+    - pswd
+    - isreg		(is registered for paid app)
+    - name		(name)
+    - cno		(contact no)
+
+ => test_user
+    - tuid  (PK)
+    - tid   (FK)
+    - uname (FK)
+
+ => test_stat
+    - tuid (FK : test_user)
+    - gans		(Given answers)
+    - edur		(elapsed duartion)
+    - canscnt		(correctly answered count)
+
+ => result		//given tests
+    - rid  (PK)
+    - tuid (FK : test_user)
+    - tsid (FK : test_stat)	(test statistics id)
+    - rank 			(rank in given test)
+
+ => kmat
+    - mid (PK)
+    - sid (FK : subject)
+    - mdata			(meta data)
+    - isFree			(PAID / FREE)
