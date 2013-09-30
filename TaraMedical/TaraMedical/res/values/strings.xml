@@ -4,5 +4,7 @@
     <string name="app_name">TaraMedical</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
+    <string name="strbtnforgotpass">Forgot Password</string>
+    <string name="strbtnlogin">Login</string>
 
 </resources>
